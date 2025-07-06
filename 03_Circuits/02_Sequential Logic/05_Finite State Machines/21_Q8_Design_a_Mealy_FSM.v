@@ -17,7 +17,7 @@ module top_module (
             B: next_state = x ? A : B;
             default : next_state = A;
         endcase
-    end
+    end 
     
     always @ (posedge clk or negedge aresetn) begin
         if (~aresetn) begin
